@@ -1,0 +1,55 @@
+<div id="register">
+  <div class="register-input">
+    <label for="cpf">CPF:</label>
+    <input type="text" name="cpf" id="cpf" placeholder="xxx.xxx.xxx-xx">
+  </div>
+  <div class="register-input">
+    <label for="name">Nome completo:</label>
+    <input type="text" name="name" id="name" placeholder="Ana Maria Da Silva">
+  </div>
+  <div class="register-input">
+    <label for="crm">CRM:</label>
+    <input type="text" name="crm" id="crm" placeholder="xxxxxxxx">
+  </div>
+
+
+
+  <div class="register-input">
+    <label for="especialidade">Especialidade:</label>
+    <select name="" id="especialidadeInput" class="form-control" ng="especialidade">
+      <option value="">Selecione</option>
+      <option *ngFor="let e of especialidade"> {{e}}</option>
+    </select>
+  </div>
+
+
+  <div class="register-input">
+    <span>Sexo:</span>
+    <div id="choose">
+      <div class="bubble right"></div>
+      <button type="button" (click)="choose($event)">Masculino</button>
+      <button type="button" (click)="choose($event)">Feminino</button>
+    </div>
+  </div>
+  <div class="register-input">
+    <label for="birth">Data de nascimento:</label>
+    <input type="text" name="birth" id="birth" placeholder="xx/xx/xxxx">
+  </div>
+  <div class="register-input">
+    <label for="phone">Celular:</label>
+    <input type="text" name="phone" id="phone" placeholder="(xx) xxxxx-xxxx">
+  </div>
+  <div class="register-input">
+    <label for="email">E-mail:</label>
+    <input type="email" name="email" id="email" placeholder="email@hotmail.com">
+  </div>
+  <div class="register-input">
+    <label for="password">Senha:</label>
+    <input type="password" name="password" id="password">
+  </div>
+  <div class="register-input">
+    <label for="repeat-password">Repetir senha:</label>
+    <input type="password" name="repeat-password" id="repeat-password">
+  </div>
+  <button type="button" id="end-register">Cadastrar</button>
+</div>

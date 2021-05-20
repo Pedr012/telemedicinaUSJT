@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: rgb(245, 245, 245);
+}
+
+button, label {
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 87.5%;
+  }
+}

@@ -1,7 +1,14 @@
-<mat-toolbar color="primary">
-  <span><a routerLink="/">Home</a></span>
-  <span class="separador"></span>
-  <ul>
-    <li><a routerLink="/register">Cadastro</a></li>
-  </ul>
-</mat-toolbar>
+<nav class="navbar navbar-expand-lg navbar-light ">
+  <span><a routerLink="/">
+      <img src="../../assets/teleusjt.png" alt="some text" width=100 height=50></a></span>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <li><a mat-button routerLink="#">Sobre Nós</a></li>
+      <li><a mat-button routerLink="/register">Login </a></li>
+    </div>
+  </div>
+</nav>
